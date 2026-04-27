@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Insta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 350px;
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn-reg {
+      background: #00c853;
+      color: white;
+    }
+
+    .btn-login {
+      background: #333;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Mini Insta</h1>
+
+    <input type="email" placeholder="Correo electrónico">
+    <input type="password" placeholder="Contraseña">
+
+    <button class="btn-reg" onclick="registrarse()">Registrarse</button>
+    <button class="btn-login" onclick="iniciarSesion()">Iniciar sesión</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
